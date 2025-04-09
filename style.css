@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
- *{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: "Space Mono", monospace;
- }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
 
- :root{
+:root{
     font-size: 62.5%;
 
     --jagged-ice: #C5E4E7;
@@ -15,9 +15,9 @@
     --black-squeeze: #F3F9FA;
     --sherpa-blue: #00474B;
     --beetle-green: #547878;
-     --topaz: #26C2AE;
-   --regent-grey: #7F9D9F;
-   --water-leaf: #9FE8DF;
+    --topaz: #26C2AE;
+    --regent-grey: #7F9D9F;
+    --water-leaf: #9FE8DF;
 }
 
 body{
@@ -77,25 +77,28 @@ div{
         }
     }
 
-    .input-box:has(input:focus){
-        outline: 2px solid var(--topaz);
-    }
+.input-box:has(input:focus){
+    outline: 2px solid var(--topaz);
+}
+
+
     .tip > div{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1.6rem;
         margin-top: 1rem;
- 
-         button{
-             border: none;
-             background: var(--sherpa-blue);
-             color: var(--white);
-             font-size: 2.4rem;
-             border-radius: .5rem;
-             padding-block: .6rem;
-             font-weight: 700;
-         }
-         button:hover{
+
+        button{
+            border: none;
+            background: var(--sherpa-blue);
+            color: var(--white);
+            font-size: 2.4rem;
+            border-radius: .5rem;
+            padding-block: .6rem;
+            font-weight: 700;
+        }
+
+        button:hover{
             background: var(--water-leaf);
             cursor: pointer;
             transition: .3s;
@@ -104,70 +107,71 @@ div{
         .button-selected{
             background: var(--topaz);
         }
+
         input{
             width: 100%;
             background: var(--black-squeeze);
-             font-size: 2.4rem;
-             text-align: center;
-             border: none;
-             border-radius: .5rem;
-             outline: none;
-             font-weight: 700;
-             color: var(--sherpa-blue);
- 
- 
-             &::placeholder{
-                 color: var(--beetle-green);
-             }
- 
-             &:focus{
-                 outline: 2px solid var(--topaz);
-             }
-        }
-        
-        .results{
-            background: var(--sherpa-blue);
-            border-radius: 1.5rem;
-            padding: 4rem 2.4rem 2.4rem;
-        
-            .amount,
-            .total{
-               display: flex;
-              justify-content: space-between;
-              align-items: center;
-              margin-top: 2.4rem;
-        
-                p{
-                    color: var(--white);
-                    font-weight: 700;
-        
-                    span {
-                        color: var(--regent-grey);
-                        font-size: 1.3rem;
-                    }
-                }
-        
-                strong{
-                color: var(--topaz);
-                font-size: 3.2rem;
-                }
-          }
-        
-          button{
-            width: 100%;
-            font-size: 2rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            background: var(--topaz);
-            color: var(--sherpa-blue);
+            font-size: 2.4rem;
+            text-align: center;
             border: none;
-            padding-block: .9rem;
             border-radius: .5rem;
+            outline: none;
+            font-weight: 700;
+            color: var(--sherpa-blue);
+
+
+            &::placeholder{
+                color: var(--beetle-green);
+            }
+
+            &:focus{
+                outline: 2px solid var(--topaz);
+            }
         }
-        }
+
     }
 }
-button:hover{
+
+.results{
+    background: var(--sherpa-blue);
+    border-radius: 1.5rem;
+    padding: 4rem 2.4rem 2.4rem;
+
+    .amount,
+    .total{
+       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2.4rem;
+
+        p{
+            color: var(--white);
+            font-weight: 700;
+
+            span {
+                color: var(--regent-grey);
+                font-size: 1.3rem;
+            }
+        }
+
+        strong{
+        color: var(--topaz);
+        font-size: 3.2rem;
+        }
+  }
+
+  button{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--topaz);
+    color: var(--sherpa-blue);
+    border: none;
+    padding-block: .9rem;
+    border-radius: .5rem;
+}
+  button:hover{
     background: var(--water-leaf);
     cursor: pointer;
     transition: .3s;
@@ -208,7 +212,9 @@ justify-content: space-between;
     .amount strong,
     .total strong{
         font-size: 4.8rem;
-    }
+    }
 
 }
-    
+
+    }
+}
