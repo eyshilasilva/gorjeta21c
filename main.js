@@ -17,14 +17,22 @@ let bill = 0
     
       
         removeClassButtonSelected()
+        document.querySelector("#custom-tip").value = ""
+ 
         buttomSelected = document.querySelector(`#button-${value}`)
         buttomSelected.classList.add("button-selected")
         
       }
     
-      function removeClassButtonSelected() {
-       if (buttomSelected !== null) {
-        buttomSelected.classList.remove("button-selected")
-        buttomSelected = null
+      function receiveCustomTipPercentageValue() {
+        tipPercentage = document.querySelector("#custom-tip").valueAsNumber / 100
+        
+        removeClassButtomSelected()
+        }
+        
+        function removeClassButtomSelected() {
+         if (buttonSelected !== null) {
+          buttonSelected.classList.remove("button-selected")
+          buttonSelected = null
       }
       }
